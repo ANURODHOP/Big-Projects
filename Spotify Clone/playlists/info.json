@@ -1,0 +1,28 @@
+{
+    "playlists" : {
+        "folders" : ["taylor","imagine","fav"]
+        ,
+        "taylor" : {
+            "thumbnail" : "https://i.scdn.co/image/ab67616100005174859e4c14fa59296c8649e0e4",
+            "ptext" : "Taylor Swift",
+            "stext" : "Artist",
+            "songs" : ["Bad Blood","Blank Space","Lover","You Belong With Me"]
+        }
+        ,
+        "imagine" : {
+            "thumbnail" : "https://seed-mix-image.spotifycdn.com/v6/img/artist/53XhwfbYqKCa1cC15pYq2q/en/default",
+            "ptext" : "Imagine Dragons",
+            "stext" : "Band",
+            "songs" : ["Believer","Bones","Enemy","Thunder"]
+        }
+        ,
+        "fav" : {
+            "thumbnail" : "https://i.scdn.co/image/ab67616d00004851d2061784a810ea79de3f2ab9",
+            "ptext" : "Favorite Songs",
+            "stext" : "Relax and Sing",
+            "songs" : ["A Sky Full Of Stars","Dandelions","Heat Waves","Let Her Go",
+                        "Memories","Perfect","Stereo Hearts"]
+        }
+    }
+}
+
