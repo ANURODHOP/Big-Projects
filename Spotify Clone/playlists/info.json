@@ -1,7 +1,5 @@
 {
     "playlists" : {
-        "folders" : ["taylor","imagine","fav"]
-        ,
         "taylor" : {
             "thumbnail" : "https://i.scdn.co/image/ab67616100005174859e4c14fa59296c8649e0e4",
             "ptext" : "Taylor Swift",
@@ -17,11 +15,52 @@
         }
         ,
         "fav" : {
-            "thumbnail" : "https://i.scdn.co/image/ab67616d00004851d2061784a810ea79de3f2ab9",
+            "thumbnail" : "https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb0f19096baecda6ed6576fe7b/1/en/default",
             "ptext" : "Favorite Songs",
             "stext" : "Relax and Sing",
-            "songs" : ["A Sky Full Of Stars","Dandelions","Heat Waves","Let Her Go",
-                        "Memories","Perfect","Stereo Hearts"]
+            "songs" : ["A Sky Full Of Stars","Dandelions","Heat Waves"]
+        }
+        ,
+        "dailymix" : {
+            "thumbnail" : "https://seed-mix-image.spotifycdn.com/v6/img/twenty_tens/7dGJo4pcD2V6oG8kP0tJRR/en/default",
+            "ptext" : "Today Hit Songs",
+            "stext" : "Albums",
+            "songs" : ["Memories","Perfect","Stereo Hearts"]
+        }
+        ,
+        "passanger" : {
+            "thumbnail" : "https://i.scdn.co/image/ab67616d00001e02eb0b18cce8b7f5c9fc1579e7",
+            "ptext" : "Passanger",
+            "stext" : "Let Her Go",
+            "songs" : ["Let Her Go"]
+        }
+        ,
+        "imagine2" : {
+            "thumbnail" : "https://seed-mix-image.spotifycdn.com/v6/img/artist/53XhwfbYqKCa1cC15pYq2q/en/default",
+            "ptext" : "Imagine Dragons",
+            "stext" : "Band",
+            "songs" : ["Believer","Bones","Enemy","Thunder"]
+        }
+        ,
+        "fav2" : {
+            "thumbnail" : "https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb0f19096baecda6ed6576fe7b/1/en/default",
+            "ptext" : "Favorite Songs",
+            "stext" : "Relax and Sing",
+            "songs" : ["A Sky Full Of Stars","Dandelions","Heat Waves"]
+        }
+        ,
+        "passanger2" : {
+            "thumbnail" : "https://i.scdn.co/image/ab67616d00001e02eb0b18cce8b7f5c9fc1579e7",
+            "ptext" : "Passanger",
+            "stext" : "Let Her Go",
+            "songs" : ["Let Her Go"]
+        }
+        ,
+        "taylor2" : {
+            "thumbnail" : "https://i.scdn.co/image/ab67616100005174859e4c14fa59296c8649e0e4",
+            "ptext" : "Taylor Swift",
+            "stext" : "Artist",
+            "songs" : ["Bad Blood","Blank Space","Lover","You Belong With Me"]
         }
     }
 }
