@@ -56,6 +56,12 @@
             </svg>
             <h4>Library</h4>
           </li>
+          </ul>
+
+          <br>
+  
+          <ul class="songsContainer">
+          
         </ul>
       </div>
     </div>
@@ -72,20 +78,20 @@
 
   <div class="down">
     <div class="btn-control">
-      <div class="playpause">
+      <div>
         <i class="fa-solid fa-arrow-left"></i>
-        <i class="fa-solid fa-play"></i>
+        <i class="fa-solid fa-play playpause"></i>
         <i class="fa-solid fa-arrow-right"></i>
       </div>
       <div class="time">
-        <span>00:00</span>
-        <input type="range" class="slider" value="0"/>
-        <span>00:00</span>
+        <span class="currTime">00:00</span>
+        <input type="range" class="slider" value="0" min="0"/>
+        <span class="duration">00:00</span>
       </div>
     </div>
     <div class="volume">
       <i class="fa-solid fa-volume-high"></i>
-      <input type="range" class="vol" value="50"/>
+      <input type="range" class="vol" min="0" max="1" step="0.1"/>
       <!-- <i class="fa-solid fa-volume-xmark"></i> -->
     </div>
   </div>

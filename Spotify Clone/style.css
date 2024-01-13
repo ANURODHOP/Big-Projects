@@ -10,6 +10,9 @@ body{
 path{
     fill: rgb(207, 203, 203);
 }
+.blueviolet{
+    background-color: blueviolet;
+}
 
 
 div.sidesContainer{
@@ -45,12 +48,17 @@ div.lside h4{
 
 }
 div.lside ul li{
-    padding-left: 20px;
-    padding-top: 10px;
-    width: 100%;
+    padding: 15px;
     display: flex;
     cursor: pointer;
-    color: rgb(170, 168, 168);
+    color: rgb(225, 222, 222);
+    transition: 300ms;
+}
+div.lside ul li i{
+    color: orangered;
+}
+.hover:hover{
+    background-color: #2f2f2f;
 }
 div.I ul li:nth-child(1){
     color: white;
@@ -204,6 +212,7 @@ div.btn-control{
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
+    cursor: pointer;
   }
   
 
