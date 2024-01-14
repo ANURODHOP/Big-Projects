@@ -1,0 +1,112 @@
+@media only screen and (max-width : 850px){
+    .songsContainer{
+        height: 80%;
+        gap: 0px;
+        padding: 0;
+        margin-left: 0;
+        overflow-y: scroll;
+        font-size: small;
+        width: max-content;
+    }
+    div.down{
+        height: 50px;
+        transform: scale(0.8);
+    }
+    div.down .btn-control{
+        width: 75%;
+        gap: 12px;
+    }
+    div.down .btn-control .slider{
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 830px){
+    *{
+        font-size: small;
+    }
+    div.lside{
+        width: 60%;
+    }
+    div.rside div.card{
+        /* transform: scale(0.8); */
+        max-width: 120px;
+        max-height: 120px;
+    }
+    div.card h2, div.card h4{
+        font-size: small;
+    }
+    div.card img{
+        max-width: 60%;
+        max-height: 55%;
+    }
+
+
+}
+
+@media only screen and (max-width: 700px){
+    div.lside, div.rside{
+        height: 75vh;
+    }
+    div.lside div.I ul li{
+        padding: 5px;
+    }
+    div.down{
+        height: 10px;
+        width: 100vw;
+    }
+    div.volume{
+        right: 5px;
+    }
+    div.volume i{
+        margin-left: 1px; 
+    }
+}
+
+@media only screen and (max-width: 575px){
+    div.lside .II{
+        height: 80%;
+    }
+    div.rside{
+        min-height: 80%;
+        min-width: 90vw;
+    }
+    div.down{
+        margin-top: 5px;
+        height: 15px;
+    }
+    div.volume .vol{
+        width: 100px;
+    }  
+}
+
+@media only screen and (max-width: 545px){
+    div.lside{
+        display: none;
+    }
+    .fa-bars{
+        width: max-content;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 440px){
+    div.rside{
+        width: 100vw;
+        height: 80vh;
+    }
+    div.lside{
+        width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    div.down .btn-control{
+        width: 75%;
+        gap: 12px;
+        justify-content: left;
+    }
+    div.down .btn-control .slider{
+        width: 20%;
+    }
+}

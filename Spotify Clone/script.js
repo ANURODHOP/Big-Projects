@@ -10,6 +10,16 @@ function convertSec(seconds) {
     return `${formattedMinutes}:${formattedSeconds}`;
 }
 
+
+//When clicking on Hamburger it should show the lside
+const Hamburger = document.querySelector(".fa-bars");
+var lside = document.querySelector("div.lside");
+Hamburger.addEventListener("click",()=>{
+    lside.classList.toggle("block")
+})
+
+
+
 //Prev and Next btn
 const prev = document.querySelector(".down .fa-arrow-left")
 const next = document.querySelector(".down .fa-arrow-right")

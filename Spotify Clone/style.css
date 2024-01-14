@@ -15,6 +15,19 @@ path{
 }
 
 
+.fa-bars{
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+.block{
+    display: block !important;
+}
 div.sidesContainer{
     display: flex;
     flex-direction: row;
@@ -41,18 +54,23 @@ div.lside div.II{
     width: 100%;
     background-color: rgb(19, 19, 19);
     border-radius: 10px;
+   
 }
 div.lside h4{
     padding: 4px;
     padding-left: 40px;
 
 }
+div.lside .II ul{
+    overflow-y: auto;
+}
 div.lside ul li{
-    padding: 15px;
+    padding: 10px;
     display: flex;
     cursor: pointer;
     color: rgb(225, 222, 222);
     transition: 300ms;
+    text-wrap: wrap;
 }
 div.lside ul li i{
     color: orangered;
@@ -67,6 +85,7 @@ div.I ul li:nth-child(1){
 
 
 
+
 /*Right Side*/
 div.rside{
     margin: 10px;
@@ -75,7 +94,7 @@ div.rside{
     height: 80vh;
     background-color: rgb(19, 19, 19);
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 div.rside h1{
     font-family: 'Arial Narrow Bold', sans-serif;
@@ -112,8 +131,8 @@ div.cardContainer div.card{
     position: relative;
     padding-top: 5px;
     margin-bottom: 15px;
-    width: 220px;
-    height: 260px;
+    max-width: 220px;
+    max-height: 260px;
     background-color: rgb(26, 22, 22);
     border-radius: 15px;
     transition: 300ms;
