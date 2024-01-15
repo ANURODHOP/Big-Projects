@@ -1,5 +1,5 @@
-@media only screen and (max-width : 850px){
-    .songsContainer{
+@media only screen and (max-width : 850px) {
+    .songsContainer {
         height: 80%;
         gap: 0px;
         padding: 0;
@@ -8,35 +8,43 @@
         font-size: small;
         width: max-content;
     }
-    div.down{
+
+    div.down {
         height: 50px;
         transform: scale(0.8);
     }
-    div.down .btn-control{
+
+    div.down .btn-control {
         width: 75%;
         gap: 12px;
     }
-    div.down .btn-control .slider{
+
+    div.down .btn-control .slider {
         width: 30%;
     }
 }
 
-@media only screen and (max-width: 830px){
-    *{
+@media only screen and (max-width: 830px) {
+    * {
         font-size: small;
     }
-    div.lside{
+
+    div.lside {
         width: 60%;
     }
-    div.rside div.card{
+
+    div.rside div.card {
         /* transform: scale(0.8); */
         max-width: 120px;
         max-height: 120px;
     }
-    div.card h2, div.card h4{
+
+    div.card h2,
+    div.card h4 {
         font-size: small;
     }
-    div.card img{
+
+    div.card img {
         max-width: 60%;
         max-height: 55%;
     }
@@ -44,75 +52,121 @@
 
 }
 
-@media only screen and (max-width: 700px){
-    div.lside, div.rside{
+@media only screen and (max-width: 700px) {
+
+    div.lside,
+    div.rside {
         height: 75vh;
     }
-    div.lside div.I ul li{
+
+    div.lside div.I ul li {
         padding: 5px;
     }
-    div.down{
+
+    div.down {
         height: 10px;
         width: 100vw;
     }
-    div.volume{
+
+    div.volume {
         right: 5px;
     }
-    div.volume i{
-        margin-left: 1px; 
+
+    div.volume i {
+        margin-left: 1px;
     }
 }
 
-@media only screen and (max-width: 575px){
-    div.lside .II{
-        height: 80%;
+
+@media screen and (max-width: 575px) {
+    div.lside .II {
+        height: 90vh;
     }
-    div.rside{
-        min-height: 80%;
-        min-width: 90vw;
+
+    div.rside {
+        min-height: 90%;
+        width: 90vw;
     }
-    div.down{
-        margin-top: 5px;
-        height: 15px;
+
+    div.down {
+        max-height: min-content;
     }
-    div.volume .vol{
+
+    div.volume .vol {
         width: 100px;
-    }  
+    }
 }
 
-@media only screen and (max-width: 545px){
-    div.lside{
+@media only screen and (max-width: 545px) {
+    div.lside {
         display: none;
     }
-    .fa-bars{
+
+    .card path {
+        display: none !important;
+    }
+
+    .fa-bars {
         width: max-content;
         display: block;
     }
 }
 
-@media only screen and (max-width: 440px){
-    div.rside{
-        width: 100vw;
-        height: 80vh;
+@media only screen and (max-width: 480px) {
+    div.rside {
+        margin: 5px;
+        width: 0 auto;
+        max-height: 90vh;
     }
-    div.lside{
+
+    div.lside {
         width: fit-content;
+    }
+
+    div.down {
+        height: fit-content;
     }
 }
 
-@media only screen and (max-width: 380px) {
-    div.down .btn-control{
-        width: 75%;
-        gap: 12px;
+@media only screen and (max-width: 480px) {
+    div.rside {
+        margin-left: auto;
+        width: 95vw;
+        max-height: 86vh;
+    }
+
+    div.down .btn-control {
+        width: 55%;
+        gap: 20px;
         justify-content: left;
     }
-    div.down .btn-control .slider{
+
+    div.down .btn-control .slider {
         width: 20%;
     }
 }
 
-@media only screen and (min-width : 546px){
-    .fa-bars{
+@media only screen and (max-width: 365px) {
+    div.rside {
+        max-height: 95vh;
+    }
+
+    div.down {
+        max-height: fit-content;
+    }
+
+    div.btn-control {
+        width: 45%;
+        justify-content: left;
+    }
+    div.down .btn-control .slider {
+        width: 15%;
+    }
+
+}
+
+@media only screen and (min-width : 546px) {
+    .fa-bars {
         display: none !important;
     }
 }

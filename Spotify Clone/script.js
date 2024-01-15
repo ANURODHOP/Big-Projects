@@ -14,7 +14,7 @@ function convertSec(seconds) {
 //When clicking on Hamburger it should show the lside
 const Hamburger = document.querySelector(".fa-bars");
 var lside = document.querySelector("div.lside");
-Hamburger.addEventListener("click",()=>{
+Hamburger.addEventListener("click", () => {
     lside.classList.toggle("block")
 })
 
@@ -46,8 +46,18 @@ async function fetchdata() {
       </div> `
     }
 
+    if (screen.availWidth <= 545) {
+        let cards = document.querySelectorAll(".rside .card");
+        let lside = document.querySelector(".lside")
+        cards.forEach(card => {
+            card.addEventListener("click", () => {
+                lside.classList.add("block")
+            })
+        })
+    }
+
     //Function to playSong
-    function playsong(lis,i) {
+    function playsong(lis, i) {
         lis.forEach(li2 => { li2.classList.remove("blueviolet") })
         lis[i].classList.add("blueviolet")
         let songName = lis[i].dataset.song;
@@ -72,36 +82,39 @@ async function fetchdata() {
                 <i class="fa-solid fa-music"></i>
                 <h4>${element} - ${data.playlists[name].ptext}</h4>
               </li>`
+
             });
             const lis = ul.querySelectorAll("li");
             var arr = Array.from(lis);
+            console.log(lis.length)
+            const prev = document.querySelector(".fa-arrow-left");
+            const next = document.querySelector(".fa-arrow-right");
+
             for (let i = 0; i < lis.length; i++) {
-                let index = arr.indexOf(lis[i]);
                 lis[i].addEventListener("click", () => {
-                    playsong(lis,i)
-                })
-                prev.addEventListener("click", () => {
-                    if(index == 0){
-                        index = lis.length;
-                    }
-                    index--;
-                    playsong(lis,index)
-                })
-                next.addEventListener("click", () => {
-                    index++;
-                    if(index == lis.length){
-                        index = 0;
-                    }
-                    playsong(lis,index)
-                })
-                currSong.addEventListener("ended",()=>{
-                    index++;
-                    if(index == lis.length){
-                        index = 0;
-                    }
-                    playsong(lis,index)
-                })
+                    currentIndex = i;
+                    playsong(lis, i);
+                    console.log("Index = " + i);
+                });
             }
+
+            let currentIndex = 0; // Initialize the current index
+            prev.addEventListener("click", () => {
+                console.log("Index = " + currentIndex);
+                currentIndex = (currentIndex - 1 + lis.length) % lis.length;
+                playsong(lis, currentIndex);
+            });
+
+            next.addEventListener("click", () => {
+                currentIndex = (currentIndex + 1) % lis.length;
+                playsong(lis, currentIndex);
+                console.log("Index = " + currentIndex);
+            });
+
+            currSong.addEventListener("ended", () => {
+                currentIndex = (currentIndex + 1) % lis.length;
+                playsong(lis, currentIndex);
+            });
 
         })
     }
@@ -131,8 +144,8 @@ function range() {
             currTime.textContent = convertSec(slider.value);
         }, 500)
     })
-    slider.addEventListener("mouseup", (e) => {
-       
+    slider.addEventListener("input", (e) => {
+
         currSong.currentTime = slider.value
     })
     playpause(slider, currTime);
@@ -140,7 +153,7 @@ function range() {
 
     //Volume
     currSong.volume = volume.value
-    volume.addEventListener("mouseup", (e) => {
+    volume.addEventListener("input", (e) => {
         e.preventDefault()
         currSong.volume = volume.value
     })
@@ -170,6 +183,8 @@ function playpause(slider, currTime) {
 
     })
 }
+
+
 
 
 
