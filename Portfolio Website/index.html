@@ -8,7 +8,14 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mobile.css">
+
+    <!--    AOS stylesheet  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--    Font Awesome script source -->
     <script src="https://kit.fontawesome.com/98a8318835.js" crossorigin="anonymous"></script>
+
+    
 </head>
 
 <body>
@@ -24,116 +31,124 @@
             </ul>
         </div>
     </nav>
-
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="assets/pic-1.png" alt="Hari Yadav profile picture" />
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Hari Yadav</h1>
-            <p class="section__text__p2">FullStack Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('assets/resume.pdf')">
-                    Download CV
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact Info
-                </button>
+    <div class="container">
+        <section id="profile">
+            <div class="section__pic-container" data-aos="fade-right">
+                <img src="assets/pic-1.png" alt="Hari Yadav profile picture" />
             </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="assets/pic-2.png" alt="Profile picture" class="about-pic" />
-            </div>
-            <div class="about-details-container">
-                <div class="text-container" style="margin-top: 50px;">
-                    <p><span class="purple">Name&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</span>Hari Yadav</p><br>
-                    <p><span class="purple">Position&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</span>Front-End Development
-                    </p><br>
-                    <p><span class="purple">Address&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</span>Nepal , Itahari</p><br>
-                </div>
-                <div class="text-container">
-                    <p>
-                        Hi, I'm Hari Yadav! I'm a fullstack developer in Nepal, Itahari. My
-                        passion for coding started when I received my first computer at 10 years old, and I haven't
-                        looked back since. 20 years later, I'm proud to say that I've created at about more than 300
-                        projects ! Check out my
-                        portfolio here to see for yourself. </p>
+            <div class="section__text" data-aos="fade-left">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Hari Yadav</h1>
+                <p class="section__text__p2">FullStack Developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('assets/resume.pdf')">
+                        Open CV
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                        Contact Info
+                    </button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="services">
-        <p class="section__text__p1">What can I offer?</p>
-        <h1 class="title">Services</h1>
-        <div class="outer">
-            <div class="card">
-                <i class="fa-sharp fa-solid fa-user fa-2xl"></i>
-                <h3>UI/UX Design</h3>
-                <p> UI/UX design aim to create visually appealing and intuitively
-                    functional digital interfaces.</p>
+        <section id="about">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section__pic-container"  data-aos="fade-right">
+                    <img src="assets/pic-2.png" alt="Profile picture" class="about-pic" />
+                </div>
+                <div class="about-details-container"  data-aos="fade-left">
+                    <div class="text-container" style="margin-top: 50px;">
+                        <p><span class="purple">Name&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</span>Hari Yadav</p><br>
+                        <p><span class="purple">Position&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</span>Front-End
+                            Development
+                        </p><br>
+                        <p><span class="purple">Address&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</span>Nepal , Itahari</p>
+                        <br>
+                    </div>
+                    <div class="text-container">
+                        <p>
+                            Hi, I'm Hari Yadav! I'm a fullstack developer in Nepal, Itahari. My
+                            passion for coding started when I received my first computer at 10 years old, and I haven't
+                            looked back since. 20 years later, I'm proud to say that I've created at about more than 300
+                            projects ! Check out my
+                            portfolio here to see for yourself. </p>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <i class="fa-solid fa-code fa-2xl"></i>
-                <h3>Web Design</h3>
-                <p>Transforming ideas into engaging and intuitive digital experiences through web design.</p>
-            </div>
-            <div class="card">
-                <i class="fa-solid fa-tablet-screen-button fa-2xl"></i>
-                <h3>Mobile Applications</h3>
-                <p>Designing and developing mobile apps for seamless user experiences and functionality</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="projects">
-        <p class="section__text__p1">My recent works</p>
-        <h1 class="title">Project</h1>
-        <div class="outer">
-            <div class="project">
-                <img src="assets/project-img-1.jpg" alt="">
-                <a href="/Side Project/Rock Paper Scissor/index.html" target="_blank"><i
-                        class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a>
-                <div class="bottom">Rock Paper Scissor</div>
+        <section id="services">
+            <p class="section__text__p1">What can I offer?</p>
+            <h1 class="title">Services</h1>
+            <div class="outer" data-aos="fade-left">
+                <div class="card">
+                    <i class="fa-sharp fa-solid fa-user fa-2xl"></i>
+                    <h3>UI/UX Design</h3>
+                    <p> UI/UX design aim to create visually appealing and intuitively
+                        functional digital interfaces.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-code fa-2xl"></i>
+                    <h3>Web Design</h3>
+                    <p>Transforming ideas into engaging and intuitive digital experiences through web design.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-tablet-screen-button fa-2xl"></i>
+                    <h3>Mobile Applications</h3>
+                    <p>Designing and developing mobile apps for seamless user experiences and functionality</p>
+                </div>
             </div>
-            <div class="project">
-                <img src="assets/project-img-2.jpg" alt="">
-                <a href="/Side Project/Product Search/index.html" target="_blank"><i
-                        class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a>
-                <div class="bottom">Search Products</div>
-            </div>
-            <div class="project">
-                <img src="assets/project-img-3.png" style="object-fit: contain;background-color: aquamarine;">
-                <a href="/Side Project/Text To Voice/index.html" target="_blank"><i
-                        class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a>
-                <div class="bottom">Text To Speech</div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-                <p><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwQMBgnxqHdHFLVhgDFCSrqFbVVtsQCcztVJkcrRBbgStNrJXKzlsFRnBHZJjCDnGfVbKDr"
-                        target="_blank">Example@gmail.com</a></p>
+        <section id="projects">
+            <p class="section__text__p1">My recent works</p>
+            <h1 class="title">Project</h1>
+            <div class="outer" data-aos="fade-right">
+                <div class="project">
+                    <img src="assets/project-img-1.jpg" alt="">
+                    <a href="/Side Project/Rock Paper Scissor/index.html" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a>
+                    <div class="bottom">Rock Paper Scissor</div>
+                </div>
+                <div class="project">
+                    <img src="assets/project-img-2.jpg" alt="">
+                    <a href="/Side Project/Product Search/index.html" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a>
+                    <div class="bottom">Search Products</div>
+                </div>
+                <div class="project">
+                    <img src="assets/project-img-3.png" style="object-fit: contain;background-color: aquamarine;">
+                    <a href="/Side Project/Text To Voice/index.html" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a>
+                    <div class="bottom">Text To Speech</div>
+                </div>
             </div>
+        </section>
 
-        </div>
-    </section>
+        <section id="contact" data-aos="fade-up">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                    <p><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwQMBgnxqHdHFLVhgDFCSrqFbVVtsQCcztVJkcrRBbgStNrJXKzlsFRnBHZJjCDnGfVbKDr"
+                            target="_blank">Example@gmail.com</a></p>
+                </div>
+
+            </div>
+        </section>
+    </div>
     <footer>
         <p>Copyright &#169; 2023 Hari Yadav. All Rights Reserved.</p>
     </footer>
 </body>
 <script src="script.js"></script>
 
+<!--    AOS script source   -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({duration: 2000})
+</script>
 </html>
